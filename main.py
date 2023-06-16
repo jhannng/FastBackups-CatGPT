@@ -7,7 +7,7 @@ from graph import Graph
 
 class Main():
 
-    def maxThroughput(connections, maxIn, maxOut, origin, targets):
+    def max_throughput(self, connections, maxIn, maxOut, origin, targets):
         """
             Function description: This function will determine the maximum possible data throughtput from the data centre (origin) to the data sentres specified in targets. The implementation of Ford-Fulkerson
             algorithm is inspired by the Malaysia FIT2004 lecturer slides.
@@ -69,3 +69,14 @@ class Main():
                 has_augmenting_path = False
 
         return max_throughput
+    
+if __name__ == "__main__":
+    connections = [(0, 1, 3000), (1, 2, 2000), (1, 3, 1000), (0, 3, 2000), (3, 4, 2000), (3, 2, 1000)]
+    maxIn = [5000, 3000, 3000, 3000, 2000]
+    maxOut = [5000, 3000, 3000, 2500, 1500]
+    origin = 0
+    targets = [4, 2]
+    
+    main = Main()
+    result = main.max_throughput(connections, maxIn, maxOut, origin, targets)
+    print(result)

@@ -218,7 +218,7 @@ class Graph():
                     edge.get_backward_flow().set_w(edge.get_backward_flow().get_w() + residual_capacity)
                 else:
                     edge.set_backward_flow(Edge(edge.get_v(), edge.get_u(), residual_capacity))
-                    edge.get_b().add_edge(edge.get_backward_flow())
+                    edge.get_u().add_edge(edge.get_backward_flow())
                     
     def __str__(self):
         """
