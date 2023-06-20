@@ -3,8 +3,8 @@
     Copyright (c) 2023 Jui Kai Hang
 """
 
-from edge import Edge
-from vertex import Vertex
+from Graph.edge import Edge
+from Graph.vertex import Vertex
 
 class Graph():
     """
