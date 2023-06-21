@@ -5,8 +5,7 @@
 
 class Node:
     """
-        The Node class is used to represent the node which contain data and one or more links to other nodes in the CatsTrie. The concept of the node implementation is based on the Malaysia FIT2004 lecture slides. 
-        However, modified it to suit the requirement of question 2.
+        The Node class is used to represent the node which contain data and one or more links to other nodes in the CatsTrie.
     """
     
     def __init__(self):

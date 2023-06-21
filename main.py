@@ -20,6 +20,7 @@ class Main():
         print(result)
         
     def cat_gpt_driver(self):
+        # CatGPT
         sentences = ["abc", "abazacy", "dbcef", "xzz", "gdbc", "abazacy", "xyz", "abazacy", "dbcef", "xyz", "xxx", "xzz"]
         mycattrie = CatsTrie(sentences)
         

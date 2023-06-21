@@ -7,8 +7,7 @@ from Node.node import Node
 
 class CatsTrie:
     """
-        CatsTrie is a class that used to represent the catGPT model, which able to complete the sentences automatically based on the prompt provided, CatsTrie is implemented based on a Trie data structure. The 
-        concept of trie implementation is based on the Malaysia FIT2004 lecturer slides. However, modified it to suit the requriment of question 2.
+        CatsTrie is a class that used to represent the catGPT model, which able to complete the sentences automatically based on the prompt provided, CatsTrie is implemented based on a Trie data structure.
     """
     
     def __init__(self, sentences):
